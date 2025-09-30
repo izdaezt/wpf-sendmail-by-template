@@ -8,4 +8,8 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <EditorConfigFiles Remove="D:\DEV\NET\WPF\sendmail-tool\src\Iz.SendmailTool.AppBase\.editorconfig" />
+  </ItemGroup>
+
 </Project>
