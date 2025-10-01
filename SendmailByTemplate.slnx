@@ -7,4 +7,8 @@
     <File Path="README.md" />
   </Folder>
   <Project Path="src/Iz.SendmailTool.AppBase/Iz.SendmailTool.AppBase.csproj" />
+  <Project Path="src/Iz.SendmailTool.Application/Iz.SendmailTool.Application.csproj" Id="068ecbda-33a7-4892-9c9b-d407c212a60f" />
+  <Project Path="src/Iz.SendmailTool.Domain/Iz.SendmailTool.Domain.csproj" />
+  <Project Path="src/Iz.SendmailTool.Infrastructure/Iz.SendmailTool.Infrastructure.csproj" Id="53f3f8ef-0a45-4a28-b819-59d0bdd708f6" />
+  <Project Path="src/SharedKernel/SharedKernel.csproj" Id="911be4c9-8ec0-421d-beac-0fd3b3bc136a" />
 </Solution>
