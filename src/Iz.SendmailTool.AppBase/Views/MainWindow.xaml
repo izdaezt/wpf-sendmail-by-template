@@ -1,0 +1,29 @@
+﻿<Window x:Class="Iz.SendmailTool.AppBase.MainWindow"
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+		xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"       
+		xmlns:local="clr-namespace:Iz.SendmailTool.AppBase.Views"
+		mc:Ignorable="d"
+		Title="{Binding Title}" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60px"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <DockPanel Grid.Row="0"
+				Margin="0,0,0,0"
+				LastChildFill="False">
+            <Button Name="BtnHome" Content="Home" DockPanel.Dock="Left"
+					Height="30" Width="50" Margin="10" 
+                    Click="BtnHome_Click" />
+            <Button Name="BtnTemplate" Content="Template" DockPanel.Dock="Left"  
+					Height="30" Width="100" Margin="10" 
+					Click="BtnTemplate_Click" />
+        </DockPanel>
+
+        <DockPanel Grid.Row="1" Margin="0,0,0,0" LastChildFill="False" Name="DPanelMain">
+            <!--<local:UcHome Grid.Row="1" Margin="5,0,-5,0" />-->
+        </DockPanel>
+    </Grid>
+</Window>

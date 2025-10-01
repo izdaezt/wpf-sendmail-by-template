@@ -406,3 +406,10 @@ dotnet_diagnostic.S6605.severity = none
 
 # S6781: JWT secret keys should not be disclosed
 dotnet_diagnostic.S6781.severity = none
+
+# IDE0032: Use auto property
+dotnet_diagnostic.IDE0032.severity = none
+
+
+# IDE0044: Use auto property
+dotnet_diagnostic.IDE0044.severity = none
