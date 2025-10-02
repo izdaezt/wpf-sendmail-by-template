@@ -410,6 +410,8 @@ dotnet_diagnostic.S6781.severity = none
 # IDE0032: Use auto property
 dotnet_diagnostic.IDE0032.severity = none
 
-
 # IDE0044: Use auto property
 dotnet_diagnostic.IDE0044.severity = none
+
+# IDE0027: Use expression body for accessors
+dotnet_diagnostic.IDE0027.severity = none

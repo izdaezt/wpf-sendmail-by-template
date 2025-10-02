@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="Iz.SendmailTool.AppBase.Controls.InputControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Iz.SendmailTool.AppBase.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="50" d:DesignWidth="500">
+    <Grid Background="#FF448884" >       
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Column="0"  Text="123" Foreground="Black" FontWeight="Bold" VerticalAlignment="Center" />
+        <TextBox Grid.Column="1" VerticalContentAlignment="Center" HorizontalAlignment="Stretch" Margin="5" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Stretch" />
+
+    </Grid>
+</UserControl>

@@ -1,5 +1,6 @@
 ﻿using System.Windows;
 using Iz.SendmailTool.AppBase.ViewModels;
+using Iz.SendmailTool.AppBase.Views;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Iz.SendmailTool.AppBase;
@@ -20,7 +21,10 @@ public partial class App : Application
     {
         //services.AddDbContext<ToDoListDBContext>();
         services.AddSingleton<MainWindow>();
-        services.AddSingleton<MainViewModel>();
+        services.AddSingleton<NewTemplateWindow>();
+
+        services.AddSingleton<MainWindowViewModel>();
+        services.AddSingleton<NewTemplateWindowViewModel>();
         // services.AddScoped<AboutWindow>();
     }
 

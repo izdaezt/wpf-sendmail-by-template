@@ -9,7 +9,7 @@ namespace Iz.SendmailTool.AppBase;
 /// </summary>
 public partial class MainWindow : Window
 {
-    public MainWindow(MainViewModel mvm)
+    public MainWindow(MainWindowViewModel mvm)
     {
         InitializeComponent();
         DataContext = mvm;  //Dependency injection
@@ -27,5 +27,13 @@ public partial class MainWindow : Window
     private void BtnTemplate_Click(object sender, RoutedEventArgs e)
     {
         DPanelMain.Children.Clear();
+        var ucTemplates = new UcListTemplate();
+        DPanelMain.Children.Add(ucTemplates);
+    }
+
+    private void BtnNewTemplate_Click(object sender, RoutedEventArgs e)
+    {
+        var newTemplateWindow = new NewTemplateWindow();
+        newTemplateWindow.ShowDialog();
     }
 }
