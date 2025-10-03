@@ -6,13 +6,18 @@
              xmlns:local="clr-namespace:Iz.SendmailTool.AppBase.Controls"
              mc:Ignorable="d" 
              d:DesignHeight="50" d:DesignWidth="500">
-    <Grid Background="#FF448884" >       
+    <Grid Background="#FF448884" >
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="100"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <TextBlock Grid.Column="0"  Text="123" Foreground="Black" FontWeight="Bold" VerticalAlignment="Center" />
-        <TextBox Grid.Column="1" VerticalContentAlignment="Center" HorizontalAlignment="Stretch" Margin="5" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Stretch" />
+        <Label Grid.Column="0"    FontWeight="Bold" Foreground="Black"
+                 Content="{Binding Label, RelativeSource={RelativeSource AncestorType=UserControl}}">
+        </Label>
 
+        <TextBox Grid.Column="1"  Margin="5" TextWrapping="Wrap"  
+                 Text="{Binding Text, RelativeSource={RelativeSource AncestorType=UserControl}, 
+                        Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+        VerticalContentAlignment="Top" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
     </Grid>
 </UserControl>

@@ -12,9 +12,11 @@ public partial class NewTemplateWindow : Window
     public NewTemplateWindow()
     {
         InitializeComponent();
-        var uc = new InputControl();
-        MainPanel.Children.Clear();    // nếu muốn xóa control cũ
-        MainPanel.Children.Add(uc);    // add UC vào panel
+        var mvm = new NewTemplateWindowViewModel();
+        DataContext = mvm;
+        //var uc = new InputControl();
+        //MainPanel.Children.Clear();    // nếu muốn xóa control cũ
+        //MainPanel.Children.Add(uc);    // add UC vào panel
     }
 
     public NewTemplateWindow(NewTemplateWindowViewModel mvm)

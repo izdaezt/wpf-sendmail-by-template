@@ -30,7 +30,7 @@ public partial class App : Application
 
     private void OnStartup(object sender, StartupEventArgs e)
     {
-        var mainWindow = diContainer.GetService<MainWindow>()
+        var mainWindow = diContainer.GetService<MainWindow>()//MainWindow
             ?? throw new Exception("Missing MainWindow");
         mainWindow.Show();
     }
